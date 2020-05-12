@@ -27,3 +27,4 @@ Lets get started with examples
 - [Resoving Promises](AsynchromousPatterns/resolving-promises/index.js) -
   - A promise is an object that can be used to represent the eventual completion of an a asynchronous operation.
   - They give us a nice way to handle what happens when a promise succeeds, using a chain of then functions.
+- [Rejecting promises](AsynchromousPatterns/rejecting-promises/index.js) - If an error occurs, we can handle it with that catch method but also if we reject the Promise for any reason, we can also handle that with the catch method.
