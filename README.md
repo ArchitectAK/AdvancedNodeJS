@@ -37,3 +37,13 @@ Lets get started with examples
   - Sequential execution was introduced with callbacks and we saw how nesting too many callbacks can create an anti-pattern called callback hell or the pyramid of doom.
   - There is another way to handle things sequentially. And this time using Promises, we can see that our code is much cleaner, much easier to organize.
   - Everything's happening in order. So we can see that we're starting, waiting, things are happening sequentially, just like they were in the pyramid of doom, although it is much easier to manage this.
+- [Sequential execution with async/await](AsynchromousPatterns/sequential-execution-with-async-await) -
+  - Promises give us a nice way to organize what happens by chaining together `.then` handlers. We use this technique to compose promise chains that can execute sequentially.
+  - What if you don't want to compose functions in a chain?
+  - What happens when you just want to write code?
+  - All we really need to do is wait for the result of one promise to complete before running some more code.
+  - Do we always have to encapsulate code bits in tiny functions?
+  - The answer is `no`. JavaScript provides us a way to work with promises using code that appears synchronous, but is in fact asynchronous.
+  - The solution is async functions. Inside of an async function, you can await for a promise to complete.
+  - This example shows how we can modify the last sequentially executed promise chain using async and await.
+  - Asynchronous functions give us a really nice way to organize our code in a more manageable fashion.
