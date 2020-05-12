@@ -28,3 +28,9 @@ Lets get started with examples
   - A promise is an object that can be used to represent the eventual completion of an a asynchronous operation.
   - They give us a nice way to handle what happens when a promise succeeds, using a chain of then functions.
 - [Rejecting promises](AsynchromousPatterns/rejecting-promises/index.js) - If an error occurs, we can handle it with that catch method but also if we reject the Promise for any reason, we can also handle that with the catch method.
+- [The promisify function](AsynchromousPatterns/promisify-function/index.js) -
+  - Both promises and callbacks can be used to handle asynchronicity within JavaScript.
+  - Promises make the code a little bit nicer, so Node JS comes with a way to quickly convert callback functions into promises.
+  - The rule is that we pass the error as the first argument to the callback, so in this case, if errors are passed as the first argument, we can assume that they are errors and handle them. Now, if our callback functions are all structured like this, where they pass the error as t
+  - The promisify method that's found in the utilities module is a great tool for turning callback functions into promises so that they're a little bit easier to work with.
+  - 
