@@ -47,3 +47,10 @@ Lets get started with examples
   - The solution is async functions. Inside of an async function, you can await for a promise to complete.
   - This example shows how we can modify the last sequentially executed promise chain using async and await.
   - Asynchronous functions give us a really nice way to organize our code in a more manageable fashion.
+- [Parallel execution](AsynchromousPatterns/parallel-execution/index.js) -
+  - Promises also come with some functions that allow us to resolve them at the same time.
+  - We can make a bunch of asynchronous requests at once and obtain a series of asynchronous results faster, because these requests will not have to execute in order, or wait for the previous request to be completed.
+  - When we're resolving several promises at the same time, it's referred to as parallel execution.
+  - We can create a single promise that will resolve several promises at once using `promise.all`. So `promise.all` will take in an array of promises to resolve.
+  - We can also execute promises in parallel by using `promise.race`. So `promise.race` still creates a single promise, but instead of waiting for all of the promises to be resolved before the single promise is resolved, we're only going to wait for the first promise to be resolved
+  - So `promise.all` and `promise.race` give us a way to execute promises in parallel.
