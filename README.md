@@ -67,4 +67,4 @@ Lets get started with examples
   - A readable stream reads data from a source and then feeds it into a pipeline bit by bit.
   - We can create a readable stream that can read from a source array.
   - Streams have two modes, binary mode and object mode, and when they're in binary mode, we can actually read data as binary or we can read it as a string.
--
+  - Readable streams can read data from any type of source and then feed it to anyone who is listening, chunk by chunk.
