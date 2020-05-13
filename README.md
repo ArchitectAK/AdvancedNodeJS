@@ -58,3 +58,4 @@ Lets get started with examples
   - So far we've looked at a couple of ways to execute asynchronous tasks sequentially. We also looked at a way that we can execute asynchronous task as promises in parallel. But what happens if we want to combine both sequential and parallel operations?
   - Sometimes promises may contain large tasks that eat a lot of resources or take a lot of time to process. Running everything at once can be too costly, but running one task at a time may take too long.
   - A possible solution for this is to create a task queue that can run a specified number of tasks concurrently at the same time.
+- [Logging concurrent tasks](AsynchromousPatterns/logging-concurrent-tasks/index.js)
