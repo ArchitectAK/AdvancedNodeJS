@@ -68,3 +68,7 @@ Lets get started with examples
   - We can create a readable stream that can read from a source array.
   - Streams have two modes, binary mode and object mode, and when they're in binary mode, we can actually read data as binary or we can read it as a string.
   - Readable streams can read data from any type of source and then feed it to anyone who is listening, chunk by chunk.
+- [Using readable streams](AdvancedStreams/using-readable-streams/index.js) - Node JS comes with all types of readable streams
+  - Http requests on the server and a response on the client, they're readable streams.
+  - The file system has readable streams. Zipping and unzipping uses readable streams.
+  - TCP sockets, process stdin, not to mention the many MPMs that implement readable streams.
