@@ -54,3 +54,7 @@ Lets get started with examples
   - We can create a single promise that will resolve several promises at once using `promise.all`. So `promise.all` will take in an array of promises to resolve.
   - We can also execute promises in parallel by using `promise.race`. So `promise.race` still creates a single promise, but instead of waiting for all of the promises to be resolved before the single promise is resolved, we're only going to wait for the first promise to be resolved
   - So `promise.all` and `promise.race` give us a way to execute promises in parallel.
+- [Concurrent tasks](AsynchromousPatterns/concurrent-tasks/index.js) -
+  - So far we've looked at a couple of ways to execute asynchronous tasks sequentially. We also looked at a way that we can execute asynchronous task as promises in parallel. But what happens if we want to combine both sequential and parallel operations?
+  - Sometimes promises may contain large tasks that eat a lot of resources or take a lot of time to process. Running everything at once can be too costly, but running one task at a time may take too long.
+  - A possible solution for this is to create a task queue that can run a specified number of tasks concurrently at the same time.
