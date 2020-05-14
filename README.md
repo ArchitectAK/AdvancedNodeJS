@@ -72,3 +72,9 @@ Lets get started with examples
   - Http requests on the server and a response on the client, they're readable streams.
   - The file system has readable streams. Zipping and unzipping uses readable streams.
   - TCP sockets, process stdin, not to mention the many MPMs that implement readable streams.
+- [Writable streams](AdvancedStreams/writable-streams/index.js) -
+  - Writeable streams represent a destination for incoming data.
+  - Writeable streams can be used to capture the data from a readable source and do something with it.
+  - Just like readable streams, writeable streams are everywhere. HTTP client request and server responses are writeable streams.
+  - The file system has writeable streams. Process.stdout and stderr, they're writeable streams.
+  - Just like readable streams, writeable streams are published in countless NPMs.
