@@ -28,4 +28,4 @@ report.on("data", (chunk) => {
   console.log("bytes:\t", total);
 });
 
-readStream.pipe(throtle).pipe(readStream).pipe(writeStream);
+readStream.pipe(throtle).pipe(report).pipe(writeStream);
