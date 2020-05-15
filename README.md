@@ -98,3 +98,5 @@ Lets get started with examples
 - [Transform streams](AdvancedStreams/transform-streams/index.js) -
   - Transform streams are a special type of duplex stream. Instead of simply passing the data to the read in to the write in, transform streams change the data.
   - Transform streams are the center pipe pieces that can be used to transform data from readable streams before they are sent to writable streams.
+  - There are a lot of transform streams out there, Node.js comes with a zlib package, that's a transform stream that can be used to zip incoming data from the read stream, and send compressed data to the write stream.
+  - Crypto is an NPM package that has transform streams that can encrypt data chunk by chunk, and then pass encrypted data to the write stream, or decrypt data from a read stream, and pass the decrypted data to the write stream
