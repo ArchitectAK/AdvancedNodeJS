@@ -85,3 +85,11 @@ Lets get started with examples
   - Piping streams is solution for that.
   - Instead of wiring up a bunch of listeners to listen for chunks of data and then pass those chunks of data into the write stream, the pipe method is doing it for us.
   - The pipe method also automatically handles back pressure for us.
+  - We can pipe data from any readable stream to any writable stream.
+- [Duplex streams]()-
+  - A duplex stream is a stream that implements both a readable and a writable.
+  - These streams allow data to pass through
+  - Readable streams will pipe data into a duplex stream, and the duplex stream can also write that data.
+  - So duplex stream represent the middle sections of pipelines.
+  - Duplex stream can receive data from our read stream and then send that data to our write stream.
+  - A typical duplex stream doesn't change anything about the data.
