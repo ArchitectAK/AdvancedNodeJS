@@ -93,3 +93,5 @@ Lets get started with examples
   - So duplex stream represent the middle sections of pipelines.
   - Duplex stream can receive data from our read stream and then send that data to our write stream.
   - A typical duplex stream doesn't change anything about the data.
+  - Duplex streams are a necessary component when you want to compose streams into complex pipelines.
+  - The duplex stream implements both a readable and a writable side, and therefore they represent the center parts of a pipeline.
