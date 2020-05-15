@@ -78,5 +78,11 @@ Lets get started with examples
   - Just like readable streams, writeable streams are everywhere. HTTP client request and server responses are writeable streams.
   - The file system has writeable streams. Process.stdout and stderr, they're writeable streams.
   - Just like readable streams, writeable streams are published in countless NPMs.
-- [Backpressure]() -
+- [Backpressure](AdvancedStreams/backpressure/index.js) -
   - Sometimes the data coming from a readable stream is too fast for a writable stream to handle.
+- [Piping streams](AdvancedStreams/piping-streams/index.js) -
+  - There's an awful lot of code that you have to use to implement a stream, and you have to worry about back pressure that seems a little complicated.
+  - Piping streams is solution for that.
+  -  Instead of wiring up a bunch of listeners to listen for chunks of data and then pass those chunks of data into the write stream, the pipe method is doing it for us.
+  -  The pipe method also automatically handles back pressure for us.
+  -  
