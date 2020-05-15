@@ -95,3 +95,7 @@ Lets get started with examples
   - A typical duplex stream doesn't change anything about the data.
   - Duplex streams are a necessary component when you want to compose streams into complex pipelines.
   - The duplex stream implements both a readable and a writable side, and therefore they represent the center parts of a pipeline.
+- [Transform streams](AdvancedStreams/transform-streams/index.js) -
+  - Transform streams are a special type of duplex stream. Instead of simply passing the data to the read in to the write in, transform streams change the data.
+  - Transform streams are the center pipe pieces that can be used to transform data from readable streams before they are sent to writable streams.
+  -
