@@ -107,4 +107,8 @@ We've taken a closer look at how node JS handles asynchronous processes with cal
 Now it's time to put our knowledge to work by implementing a web server that handles upload and download streams. And node JS streams are everywhere. And the idea is that you wanna stream everything. So let's go ahead and get started building an HTTP server that can stream a video to the web browser.
 
 - [Streaming to the browser](HTTPStreaming/streaming-to-the-browser/index.js)
-- [Handling range requests](HTTPStreaming/handling-range-requests/index.js)
+- [Handling range requests](HTTPStreaming/handling-range-requests/index.js) -
+  - And can I skip ahead? Yes, I can skip to different points of the video. So we are handling range requests.
+  - Does this work in Safari now? Yes, it does.
+  - Safari requires that we handle these range requests and because we are, our video now works.
+  - Video handles range requests and we also introduced some stream options that we can add to file streams, specifically setting up a smaller piece of the stream using start and end values.
