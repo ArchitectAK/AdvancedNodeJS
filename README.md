@@ -112,3 +112,6 @@ Now it's time to put our knowledge to work by implementing a web server that han
   - Does this work in Safari now? Yes, it does.
   - Safari requires that we handle these range requests and because we are, our video now works.
   - Video handles range requests and we also introduced some stream options that we can add to file streams, specifically setting up a smaller piece of the stream using start and end values.
+- [Forking and uploading streams](HTTPStreaming/forking-and-uploading-streams/index.js) -
+  - The HTTP response object is a writable stream and the HTTP request object is a readable stream. We can use the request stream as a source.
+- []()
