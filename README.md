@@ -107,3 +107,4 @@ We've taken a closer look at how node JS handles asynchronous processes with cal
 Now it's time to put our knowledge to work by implementing a web server that handles upload and download streams. And node JS streams are everywhere. And the idea is that you wanna stream everything. So let's go ahead and get started building an HTTP server that can stream a video to the web browser.
 
 - [Streaming to the browser](HTTPStreaming/streaming-to-the-browser/index.js)
+- [Handling range requests](HTTPStreaming/handling-range-requests/index.js)
