@@ -100,3 +100,10 @@ Lets get started with examples
   - Transform streams are the center pipe pieces that can be used to transform data from readable streams before they are sent to writable streams.
   - There are a lot of transform streams out there, Node.js comes with a zlib package, that's a transform stream that can be used to zip incoming data from the read stream, and send compressed data to the write stream.
   - Crypto is an NPM package that has transform streams that can encrypt data chunk by chunk, and then pass encrypted data to the write stream, or decrypt data from a read stream, and pass the decrypted data to the write stream
+
+## Advanced Streams
+
+We've taken a closer look at how node JS handles asynchronous processes with callbacks, promises, and streams.
+Now it's time to put our knowledge to work by implementing a web server that handles upload and download streams. And node JS streams are everywhere. And the idea is that you wanna stream everything. So let's go ahead and get started building an HTTP server that can stream a video to the web browser.
+
+- [Streaming to the browser](HTTPStreaming/streaming-to-the-browser/index.js)
