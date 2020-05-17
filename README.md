@@ -114,4 +114,5 @@ Now it's time to put our knowledge to work by implementing a web server that han
   - Video handles range requests and we also introduced some stream options that we can add to file streams, specifically setting up a smaller piece of the stream using start and end values.
 - [Forking and uploading streams](HTTPStreaming/forking-and-uploading-streams/index.js) -
   - The HTTP response object is a writable stream and the HTTP request object is a readable stream. We can use the request stream as a source.
-- [Parsing multipart/form-data](HTTPStreaming/parsing-multipart-form-data/index.js)
+- [Parsing multipart/form-data](HTTPStreaming/parsing-multipart-form-data/index.js) -
+  - By using multiparty, to help us parse our multipart requests, we can actually take the part, which represents the file itself, and because that's a readable stream, pipe it to any readable stream that we choose to use. So, that actually concludes our little server project here. So we are successfully able to stream videos to the client on this video server. And handle range requests, as well as handle upload files. So, we're able to actually stream data from the client.
